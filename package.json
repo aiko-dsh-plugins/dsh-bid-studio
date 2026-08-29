@@ -1,6 +1,6 @@
 {
   "name": "aiko-dsh-bid-studio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Installable Bid Studio workbench for DeepSeek Harness, powered by the Aiko Ontology Kernel.",
   "type": "module",
   "main": "./lib/index.js",
@@ -36,7 +36,7 @@
     }
   },
   "dependencies": {
-    "aiko-dsh-ontology-kernel": "github:aiko-dsh-plugins/dsh-ontology-kernel#v0.1.0",
+    "aiko-dsh-ontology-kernel": "git+https://github.com/aiko-dsh-plugins/dsh-ontology-kernel.git#v0.1.1",
     "react": "^18.2.0"
   },
   "peerDependencies": {

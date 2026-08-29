@@ -39,8 +39,8 @@ importers:
         specifier: ^0.1.1-rc.2
         version: 0.1.1-rc.2(28bb86472cc847192971ba8f519d3fef)
       aiko-dsh-ontology-kernel:
-        specifier: github:aiko-dsh-plugins/dsh-ontology-kernel#v0.1.0
-        version: https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/8f1fdfb195698743646eba8957f9babd31c1a452(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-brand@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)))(@deepseek-ai/dsh-storage-domain@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/dsh-storage@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))))(@deepseek-ai/dsh-typert-protocol@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)))
+        specifier: git+https://github.com/aiko-dsh-plugins/dsh-ontology-kernel.git#v0.1.1
+        version: https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/dded4de4d878af7a530ae18b22d8176c02e542e8(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-brand@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)))(@deepseek-ai/dsh-storage-domain@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/dsh-storage@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))))(@deepseek-ai/dsh-typert-protocol@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)))
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -658,9 +658,9 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  aiko-dsh-ontology-kernel@https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/8f1fdfb195698743646eba8957f9babd31c1a452:
-    resolution: {gitHosted: true, integrity: sha512-Qc/fp0EPPbrhcPBzdRmkISfqBijQTvD/y7PiPNl7jm8bzu4jY4XpOAORQj5yphDGnqmJlCzXFP+MblffWSi1kg==, tarball: https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/8f1fdfb195698743646eba8957f9babd31c1a452}
-    version: 0.1.0
+  aiko-dsh-ontology-kernel@https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/dded4de4d878af7a530ae18b22d8176c02e542e8:
+    resolution: {gitHosted: true, integrity: sha512-LGsclthZliCRE/ARGExwKfpB4A1GPgeKL1U4kJumvDMq/Ozzz+oGC3/l7yvsxVznjxqnPEnYbyIYS8hFm+GXdQ==, tarball: https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/dded4de4d878af7a530ae18b22d8176c02e542e8}
+    version: 0.1.1
     engines: {node: '>=22.19.0'}
     peerDependencies:
       '@deepseek-ai/cordis': ^4.0.1
@@ -1354,7 +1354,7 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  aiko-dsh-ontology-kernel@https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/8f1fdfb195698743646eba8957f9babd31c1a452(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-brand@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)))(@deepseek-ai/dsh-storage-domain@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/dsh-storage@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))))(@deepseek-ai/dsh-typert-protocol@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))):
+  aiko-dsh-ontology-kernel@https://codeload.github.com/aiko-dsh-plugins/dsh-ontology-kernel/tar.gz/dded4de4d878af7a530ae18b22d8176c02e542e8(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-brand@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)))(@deepseek-ai/dsh-storage-domain@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))(@deepseek-ai/dsh-storage@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))))(@deepseek-ai/dsh-typert-protocol@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))):
     dependencies:
       '@deepseek-ai/cordis': 4.0.1(@deepseek-ai/cordis-plugin-include@1.0.6)(@deepseek-ai/cordis-plugin-loader@1.0.2)
       '@deepseek-ai/dsh-brand': 0.1.1-rc.2(@deepseek-ai/cordis@4.0.1)(@deepseek-ai/dsh-invariants@0.1.1-rc.2(@deepseek-ai/cordis@4.0.1))
