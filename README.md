@@ -12,7 +12,7 @@ The bundle depends on [Aiko DSH Ontology Kernel](https://github.com/aiko-dsh-plu
 ## Install from GitHub
 
 ```sh
-dsh plugin --profile web add git+https://github.com/aiko-dsh-plugins/dsh-bid-studio.git#v0.1.1
+dsh plugin --profile web add https://codeload.github.com/aiko-dsh-plugins/dsh-bid-studio/tar.gz/refs/tags/v0.1.2
 dsh --profile web --dump-config
 dsh --profile web
 ```
