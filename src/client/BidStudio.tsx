@@ -7,7 +7,7 @@ import type {
   OntologyObject,
   OntologyObjectTypeId,
   OntologyPropertyValue,
-} from 'aiko-dsh-ontology-kernel/runtime'
+} from 'aiko-dsh-bid-studio/ontology/runtime'
 import {
   APPROVE_BID_REVIEW,
   BID_OBJECT_TYPES,

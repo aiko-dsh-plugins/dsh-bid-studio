@@ -14,10 +14,17 @@ test('declares one installable host and browser bundle', async () => {
 })
 
 test('activates the ontology adapters, workflow provider, and workbench', () => {
-  assert.match(patch, /aiko-dsh-ontology-kernel\/local/)
-  assert.match(patch, /aiko-dsh-ontology-kernel\r?$/m)
+  assert.match(patch, /aiko-dsh-bid-studio\/ontology\/local/)
+  assert.match(patch, /aiko-dsh-bid-studio\/ontology\r?$/m)
   assert.match(patch, /@deepseek-ai\/dsh-workflow-worker-thread/)
   assert.match(patch, /name: aiko-dsh-bid-studio/)
+})
+
+test('ships the ontology runtime without an exotic transitive dependency', async () => {
+  assert.equal(manifest.dependencies['aiko-dsh-ontology-kernel'], undefined)
+  await import('../lib/ontology/runtime.js')
+  await import('../lib/ontology/local.js')
+  await import('../lib/ontology/index.js')
 })
 
 test('browser artifact registers the public package id', () => {

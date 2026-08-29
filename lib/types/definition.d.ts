@@ -1,5 +1,5 @@
 /** Bid ontology and executable process definition shared by Host and browser. */
-import type { OntologyActionDriver, OntologyActionId, OntologyDefinition, OntologyFunctionId, OntologyLinkTypeId, OntologyObjectTypeId } from 'aiko-dsh-ontology-kernel/runtime';
+import type { OntologyActionDriver, OntologyActionId, OntologyDefinition, OntologyFunctionId, OntologyLinkTypeId, OntologyObjectTypeId } from 'aiko-dsh-bid-studio/ontology/runtime';
 /** Object-type ids owned by the bid plugin. */
 export declare const BID_OBJECT_TYPES: {
     readonly project: OntologyObjectTypeId;

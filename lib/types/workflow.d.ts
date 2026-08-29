@@ -1,5 +1,5 @@
 /** Executable local validation adapters for the standard bid process. */
-import type { OntologyActionHandlers, OntologyFunctionHandlers } from 'aiko-dsh-ontology-kernel/runtime';
+import type { OntologyActionHandlers, OntologyFunctionHandlers } from 'aiko-dsh-bid-studio/ontology/runtime';
 import type { WorkflowRun, WorkflowStartRequest } from '@deepseek-ai/dsh-workflow';
 type StartWorkflow = (request: WorkflowStartRequest) => WorkflowRun;
 /**

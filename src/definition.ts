@@ -7,7 +7,7 @@ import type {
   OntologyFunctionId,
   OntologyLinkTypeId,
   OntologyObjectTypeId,
-} from 'aiko-dsh-ontology-kernel/runtime'
+} from 'aiko-dsh-bid-studio/ontology/runtime'
 
 const action = (value: string): OntologyActionId => value as OntologyActionId
 const definition = (value: string): OntologyDefinitionId => value as OntologyDefinitionId
