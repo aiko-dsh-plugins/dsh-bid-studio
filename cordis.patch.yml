@@ -1,0 +1,14 @@
+- insert:
+    - id: ontology-local
+      name: aiko-dsh-ontology-kernel/local
+
+    - id: ontology-remote
+      name: aiko-dsh-ontology-kernel
+
+    - id: bid-workflow-worker-thread
+      name: '@deepseek-ai/dsh-workflow-worker-thread'
+      config:
+        provider: spawn
+
+    - id: bid-studio
+      name: aiko-dsh-bid-studio

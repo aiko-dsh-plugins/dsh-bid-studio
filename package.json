@@ -1,0 +1,56 @@
+{
+  "name": "aiko-dsh-bid-studio",
+  "version": "0.1.0",
+  "description": "Installable Bid Studio workbench for DeepSeek Harness, powered by the Aiko Ontology Kernel.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "exports": {
+    ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
+    "./client": { "types": "./lib/types/client/index.d.ts", "default": "./lib/client.js" },
+    "./invariant": { "types": "./lib/types/invariant.d.ts", "default": "./lib/invariant.js" },
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "src", "README.md", "LICENSE", "cordis.patch.yml"],
+  "scripts": {
+    "test": "node --test test/smoke.test.mjs"
+  },
+  "keywords": ["deepseek-harness", "dsh", "dsh-plugin", "bid", "tender", "ontology"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiko-dsh-plugins/dsh-bid-studio.git"
+  },
+  "homepage": "https://github.com/aiko-dsh-plugins/dsh-bid-studio",
+  "bugs": { "url": "https://github.com/aiko-dsh-plugins/dsh-bid-studio/issues" },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "dependencies": {
+    "aiko-dsh-ontology-kernel": "github:aiko-dsh-plugins/dsh-ontology-kernel#v0.1.0",
+    "react": "^18.2.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-api-remotes": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-runtime": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-layout": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-sidebar": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-invariants": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-tools": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-workflow": "^0.1.1-rc.2",
+    "@deepseek-ai/dsh-workflow-worker-thread": "^0.1.1-rc.2"
+  },
+  "engines": { "node": ">=22.19.0" },
+  "packageManager": "pnpm@11.7.0"
+}
