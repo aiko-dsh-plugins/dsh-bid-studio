@@ -1,10 +1,4 @@
 - insert:
-    - id: ontology-local
-      name: aiko-dsh-bid-studio/ontology/local
-
-    - id: ontology-remote
-      name: aiko-dsh-bid-studio/ontology
-
     - id: bid-workflow-worker-thread
       name: '@deepseek-ai/dsh-workflow-worker-thread'
       config:

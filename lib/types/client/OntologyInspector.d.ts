@@ -1,4 +1,4 @@
-import type { OntologyDefinition } from 'aiko-dsh-bid-studio/ontology/runtime';
+import type { OntologyDefinition } from 'aiko-dsh-ontology-kernel/runtime';
 interface OntologyInspectorProps {
     definition: OntologyDefinition;
 }

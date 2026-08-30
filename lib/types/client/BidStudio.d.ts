@@ -1,5 +1,5 @@
 import type { PropsRuntime } from '@deepseek-ai/dsh-client-ui-slots';
-import type { OntologyActionId, OntologyDefinition, OntologyObject, OntologyObjectTypeId, OntologyPropertyValue } from 'aiko-dsh-bid-studio/ontology/runtime';
+import type { OntologyActionId, OntologyDefinition, OntologyObject, OntologyObjectTypeId, OntologyPropertyValue } from 'aiko-dsh-ontology-kernel/runtime';
 interface BidStudioRemote {
     listObjects(type?: OntologyObjectTypeId): Promise<readonly OntologyObject[]>;
     execute(action: OntologyActionId, input: Readonly<Record<string, OntologyPropertyValue>>): Promise<unknown>;

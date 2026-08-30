@@ -1,6 +1,6 @@
 {
   "name": "aiko-dsh-bid-studio",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Installable Bid Studio workbench for DeepSeek Harness, powered by the Aiko Ontology Kernel.",
   "type": "module",
   "main": "./lib/index.js",
@@ -9,12 +9,6 @@
     ".": { "types": "./lib/types/index.d.ts", "default": "./lib/index.js" },
     "./client": { "types": "./lib/types/client/index.d.ts", "default": "./lib/client.js" },
     "./invariant": { "types": "./lib/types/invariant.d.ts", "default": "./lib/invariant.js" },
-    "./ontology": { "types": "./lib/ontology/index.d.ts", "default": "./lib/ontology/index.js" },
-    "./ontology/local": { "types": "./lib/ontology/local.d.ts", "default": "./lib/ontology/local.js" },
-    "./ontology/runtime": { "types": "./lib/ontology/runtime.d.ts", "default": "./lib/ontology/runtime.js" },
-    "./ontology/types": { "types": "./lib/ontology/types.d.ts", "default": "./lib/ontology/runtime.js" },
-    "./ontology/typert": { "types": "./lib/ontology/typert.host.d.ts", "default": "./lib/ontology/typert.host.js" },
-    "./ontology/remote": { "types": "./lib/ontology/typert.remote-client.d.ts", "default": "./lib/ontology/typert.remote-client.js" },
     "./package.json": "./package.json"
   },
   "files": ["lib", "src", "README.md", "LICENSE", "cordis.patch.yml"],
@@ -46,6 +40,7 @@
     "zod": "^4.4.3"
   },
   "peerDependencies": {
+    "aiko-dsh-ontology-kernel": "^0.1.2",
     "@deepseek-ai/cordis": "^4.0.1",
     "@deepseek-ai/dsh-api-remotes": "^0.1.1-rc.2",
     "@deepseek-ai/dsh-brand": "^0.1.1-rc.2",
@@ -59,6 +54,9 @@
     "@deepseek-ai/dsh-typert-protocol": "^0.1.1-rc.2",
     "@deepseek-ai/dsh-workflow": "^0.1.1-rc.2",
     "@deepseek-ai/dsh-workflow-worker-thread": "^0.1.1-rc.2"
+  },
+  "devDependencies": {
+    "aiko-dsh-ontology-kernel": "file:../dsh-ontology-kernel"
   },
   "engines": { "node": ">=22.19.0" },
   "packageManager": "pnpm@11.7.0"

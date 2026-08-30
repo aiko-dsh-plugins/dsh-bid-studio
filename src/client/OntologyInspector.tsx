@@ -1,6 +1,6 @@
 /** Interactive view of every object, relationship, Function, Action, and process definition. */
 import { useState } from 'react'
-import type { OntologyDefinition, OntologyObjectTypeId, OntologyPropertyValue } from 'aiko-dsh-bid-studio/ontology/runtime'
+import type { OntologyDefinition, OntologyObjectTypeId, OntologyPropertyValue } from 'aiko-dsh-ontology-kernel/runtime'
 import { BID_WORKFLOW } from '../definition.ts'
 import css from './BidStudio.module.css'
 

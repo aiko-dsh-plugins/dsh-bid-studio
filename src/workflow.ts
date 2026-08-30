@@ -9,7 +9,7 @@ import type {
   OntologyObjectTypeId,
   OntologyPropertyValue,
   OntologyReadContext,
-} from 'aiko-dsh-bid-studio/ontology/runtime'
+} from 'aiko-dsh-ontology-kernel/runtime'
 import type { WorkflowRun, WorkflowStartRequest } from '@deepseek-ai/dsh-workflow'
 import { BID_ACTIONS, BID_FUNCTIONS, BID_LINK_TYPES, BID_OBJECT_TYPES, BID_WORKFLOW, type BidWorkflowStepDefinition } from './definition.ts'
 

@@ -1,7 +1,7 @@
 /** Bid Studio Host plugin: complete bid ontology, process adapters, and conversation tools. */
 import type { Context } from '@deepseek-ai/cordis'
-import type { OntologyObject } from 'aiko-dsh-bid-studio/ontology/runtime'
-import type {} from 'aiko-dsh-bid-studio/ontology/runtime'
+import type { OntologyObject } from 'aiko-dsh-ontology-kernel/runtime'
+import type {} from 'aiko-dsh-ontology-kernel/runtime'
 import { defineTool } from '@deepseek-ai/dsh-tools'
 import { BID_ONTOLOGY, CREATE_BID_PROJECT, EXPORT_BID_DOCUMENT, RUN_BID_TO_REVIEW } from './definition.ts'
 import { createBidActionHandlers, createBidFunctionHandlers } from './workflow.ts'
